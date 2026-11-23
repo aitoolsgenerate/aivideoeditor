@@ -10,6 +10,15 @@ export default defineConfig(() => {
     plugins: [
       react(),
       tailwindcss(),
+      {
+        name: 'fix-asset-base-path',
+        apply: 'build',
+        transform(code) {
+          return code
+            .replaceAll('"/src/assets/', '"/aivideoeditor/src/assets/')
+            .replaceAll("'/src/assets/", "'/aivideoeditor/src/assets/");
+        },
+      },
       // Copies src/assets into dist/ so root-relative URLs like
       // "/src/assets/images/..." (e.g. generate_image output) still resolve
       // in production builds. Do not remove.
