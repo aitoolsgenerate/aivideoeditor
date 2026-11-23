@@ -1,0 +1,6 @@
+{
+  "name": "React Agency — Blogger Theme & XML Studio",
+  "description": "Pixel-faithful agency Blogger theme preview with live customization and full exportable Blogger XML template code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
